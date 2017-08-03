@@ -1,0 +1,11 @@
+p {
+  display: inline;
+  padding: 0px 10px;
+  font-size: 50px;
+}
+
+button {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+}
