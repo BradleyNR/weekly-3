@@ -1,20 +1,51 @@
+body {
+  background-color: #303f9f;
+  font-family: 'Helvetica', sans-serif;
+}
+
 h1, h2, .buttons, .words, .guessed {
   text-align: center;
 }
 
-p {
-  display: inline;
-  padding: 0px 10px;
-  font-size: 50px;
+h1 {
+  font-size: 100px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 button {
-  height: 40px;
-  width: 40px;
-  font-size: 20px;
+  background-color: #AAB6FE;
+  border: 2px solid black;
+  font-size: 42px;
+  height: 80px;
+  width: 80px;
 }
 
-.guessed {
-  letter-spacing: 15px;
+button:active {
+  background-color: #49599a;
+}
+
+.words {
+  margin-top: 20px;
+}
+
+.words p {
+  display: inline;
+  padding: 10px;
+  font-size: 100px;
+}
+
+.guessed p {
   padding-top: 20px;
+  font-size: 42px;
 }

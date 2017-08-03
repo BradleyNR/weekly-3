@@ -61,6 +61,11 @@ function recordGuess(button){
     return console.log(lettersGuessed);
   }
 }
+//adds guessed letters to guessed row once
+function displayGuessed(button){
+  guessed.textContent = 'Letters Guessed: ' + lettersGuessed;
+};
+
 
 //creates the answer area
 wordLetter.forEach(function(item, index){
@@ -71,10 +76,7 @@ wordLetter.forEach(function(item, index){
 //creates the row of guessed letters
 let guessed = document.createElement('p');
 guessedRow.appendChild(guessed);
-//adds guessed letters to guessed row once
-function displayGuessed(button){
-  guessed.textContent = lettersGuessed;
-};
+
 
 
 
