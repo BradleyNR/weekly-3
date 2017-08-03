@@ -1,3 +1,7 @@
+h1, h2, .buttons, .words, .guessed {
+  text-align: center;
+}
+
 p {
   display: inline;
   padding: 0px 10px;
@@ -8,4 +12,9 @@ button {
   height: 40px;
   width: 40px;
   font-size: 20px;
+}
+
+.guessed {
+  letter-spacing: 15px;
+  padding-top: 20px;
 }

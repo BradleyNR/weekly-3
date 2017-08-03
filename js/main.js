@@ -22,16 +22,17 @@ let alphabet = ['a', 'b','c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
 
 //array to store letters you have guessed when pressing alphabet button
 let lettersGuessed = [];
-//creates the buttons, adds event listener, runs funtions, then pushes content to screen
+//creates the alphabet buttons, adds event listener, runs funtions, then pushes content to screen
 alphabet.forEach(function(item, index){
   let button = document.createElement('button');
   button.textContent = item;
   button.addEventListener('click', function(e){
     //e.target selects the target of the event listener e (e is the thing triggering the event)
     var button = e.target;
+    //functions that run on button click
     recordGuess(button);
     checkGuess(button);
-
+    displayGuessed(button);
   });
   buttonRow.appendChild(button);
 });
@@ -61,12 +62,19 @@ function recordGuess(button){
   }
 }
 
-
+//creates the answer area
 wordLetter.forEach(function(item, index){
   let button = document.createElement('p');
   button.textContent = '_';
   wordRow.appendChild(button);
 })
+//creates the row of guessed letters
+let guessed = document.createElement('p');
+guessedRow.appendChild(guessed);
+//adds guessed letters to guessed row once
+function displayGuessed(button){
+  guessed.textContent = lettersGuessed;
+};
 
 
 
