@@ -58,6 +58,9 @@ button:focus {
   display: inline;
   padding: 10px;
   font-size: 100px;
+  color: #AAB6FE;
+  border: 2px solid #49599a;
+  background: rgba(63, 63, 191, 0.5);
 }
 
 .win-or-loss {
@@ -68,7 +71,7 @@ button:focus {
 .win-or-loss p {
   color: #AAB6FE;
   font-size: 50px;
-  margin: 30px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 .guessed p {
