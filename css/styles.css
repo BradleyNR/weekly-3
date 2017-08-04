@@ -1,32 +1,35 @@
 body {
-  background-color: #303f9f;
+  background-image: url(../images/mountains.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Helvetica', sans-serif;
-  width: 55%;
-  margin: auto;
 }
 
-h1, h2, h3, .buttons, .words, .guessed {
-  text-align: center;
+h1, h2, .buttons {
+  padding-left: 40px;
 }
 
 h1 {
   font-size: 80px;
-  color: #ffffff;
+  color: #000000;
+  margin: 30px 0 0 0;
 }
 
 h2 {
   font-size: 40px;
-  color: #ffffff;
+  color: #000000;
+  margin: 0 0 20px 0;
 }
 
 h3 {
   font-size: 30px;
+  margin: 0;
 }
 
 .buttons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  width: 50%;
 }
 
 button {
@@ -41,8 +44,14 @@ button:active {
   background-color: #49599a;
 }
 
+button:focus {
+  outline: 0;
+}
+
 .words {
   margin-top: 20px;
+  display: inline-block;
+  padding-left: 40px;
 }
 
 .words p {
@@ -51,12 +60,19 @@ button:active {
   font-size: 100px;
 }
 
+.win-or-loss {
+  text-align: right;
+  padding-right: 40px;
+}
+
 .win-or-loss p {
-  text-align: center;
   color: #AAB6FE;
   font-size: 50px;
+  margin: 30px 0 0 0;
 }
 
 .guessed p {
   font-size: 42px;
+  letter-spacing: 5px;
+  margin: 0;
 }

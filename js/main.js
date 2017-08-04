@@ -48,6 +48,7 @@ alphabet.forEach(function(item, index){
   button.addEventListener('click', function(e){
     //e.target selects the target of the event listener e (e is the thing triggering the event)
     let button = e.target;
+    button.style.backgroundColor = "#49599a";
     //functions that run on button click
     recordGuess(button);
     checkGuess(button);
@@ -79,7 +80,7 @@ function recordGuess(button){
   }
   // record the guessed letter and display on screen
   lettersGuessed.push(button.textContent);
-  guessed.textContent = lettersGuessed;
+  // guessed.textContent = lettersGuessed;
   attempts = attempts - 1;
   //if attempts is 0, bail so numbers don't go negative
   if (attempts <= -1){
